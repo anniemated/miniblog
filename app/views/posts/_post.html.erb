@@ -1,5 +1,4 @@
 <div id="<%= dom_id post %>">
-  <%# <div class="post"> %>
     <p>
       <strong>title:</strong>
       <%= post.title %>
@@ -9,5 +8,10 @@
       <strong>body:</strong>
       <%= post.body %>
     </p>
-  <%# </div> %>
+
+    <% if post.image.attached? %>
+      <%= image_tag post.image, class: "image" %>
+    <% else %>
+     <p style="color: red">No image attached</p>
+    <% end %>
 </div>

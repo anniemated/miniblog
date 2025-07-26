@@ -26,6 +26,10 @@
     box-shadow: 2px 2px 6px rgb(150 150 150/ 90%);
  }
 
+ .post:hover {
+   transform: translateY(-3px);
+ }
+
  a {
     text-decoration: wavy underline;
     color: #0077cc;
@@ -33,9 +37,26 @@
 
  .textarea {
    font-family: "Inconsolata", monospace;
+   font-size: 16px;
  }
 
  .button {
+   font-size: 16px;
    background-color: white;
-   
+   border: 1px solid black;
+   margin-top: 1rem;
+   font-family: "Inconsolata", monospace;
+ }
+
+ .button:hover {
+   background-color: #d4d4d4;
+   transform: translateY(-1px);
+ }
+
+ .button:active {
+   transform: translateY(1px);
+ }
+
+ .image {
+   max-width: 80%;
  }
