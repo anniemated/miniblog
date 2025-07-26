@@ -7,8 +7,8 @@
 <% @posts.each do |post| %>
   <div class="post">
     <%= render post %>
-    <p><%= link_to "show this sticky", post %></p>
+    <p><%= link_to "show this post-it", post %></p>
   </div>
   <% end %>
 
-<%= link_to "new sticky", new_post_path %>
+<%= link_to "new post-it", new_post_path %>

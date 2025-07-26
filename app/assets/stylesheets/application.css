@@ -31,9 +31,11 @@
     color: #0077cc;
  }
 
- .button_to input[type="submit"]{
-    font-family: "Inconsolata", monospace;
-    background-color: whitesmoke;
-    border: none;
-    border-radius: 5px;
+ .textarea {
+   font-family: "Inconsolata", monospace;
+ }
+
+ .button {
+   background-color: white;
+   
  }

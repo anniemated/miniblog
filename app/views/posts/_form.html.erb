@@ -11,17 +11,19 @@
     </div>
   <% end %>
 
+<div class="post">
   <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.label :title, "title", style: "display: block" %>
+    <%= form.text_field :title, class: "textarea", placeholder: "enter title" %>
   </div>
 
   <div>
-    <%= form.label :body, style: "display: block" %>
-    <%= form.textarea :body %>
+    <%= form.label :body, "body", style: "display: block" %>
+    <%= form.textarea :body, class: "textarea", placeholder: "enter body" %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit%>
   </div>
+</div>
 <% end %>
