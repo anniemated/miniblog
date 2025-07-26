@@ -1,16 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<% content_for :title, "Posts" %>
+<% content_for :title, "bulletin" %>
 
-<h1>Posts</h1>
+<h1>miniblog</h1>
 
-<div id="posts">
-  <% @posts.each do |post| %>
+<% @posts.each do |post| %>
+  <div class="post">
     <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
+    <p><%= link_to "show this sticky", post %></p>
+  </div>
   <% end %>
-</div>
 
-<%= link_to "New post", new_post_path %>
+<%= link_to "new sticky", new_post_path %>
