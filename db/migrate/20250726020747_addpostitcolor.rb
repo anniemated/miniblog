@@ -1,4 +1,4 @@
-class Addcolor < ActiveRecord::Migration[8.0]
+class Addpostitcolor < ActiveRecord::Migration[8.0]
   def change
     add_column :posts, :color, :string
   end
